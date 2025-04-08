@@ -8,7 +8,8 @@
 # We will not take it a step further and write a full bash script using
 # different bash features.
 #
-
+#Edited by: Caroline Duncan
+#Date:4/8/25
 # Using variables
 variable_name="something"
 
@@ -113,10 +114,6 @@ cond_test(){
     fi
 }
 
-# Example call:
-# cond_test "apple" "apple"   # Outputs: hello
-# cond_test "apple" "orange"  # Outputs: bye
-
 # Now write a function that prints two numbers on screen and takes an input. if
 # the input equals to the sum of the two number, it prints "correct" else it
 # prints "incorrect"
@@ -164,4 +161,3 @@ infinite_sum_quiz(){
         fi
     done
 }
-# infinite_sum_quiz
