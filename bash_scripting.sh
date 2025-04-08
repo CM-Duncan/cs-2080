@@ -83,11 +83,7 @@ printit alice bob
 # fi 
 #
 # Remember to close the block with fi
-cond_test(){
-    if [[ $1 == $2 ]]; then
-        echo "hello"
 
-}
 
 
 #
@@ -120,20 +116,6 @@ cond_test(){
 # Example call:
 # cond_test "apple" "apple"   # Outputs: hello
 # cond_test "apple" "orange"  # Outputs: bye
-
-# Function to check user input sum
-check_sum(){
-    num1=5
-    num2=7
-    echo "What is $num1 + $num2?"
-    read user_input
-    expected_sum=$((num1 + num2))
-    if [[ $user_input -eq $expected_sum ]]; then
-        echo "correct"
-    else
-        echo "incorrect"
-    fi
-}
 
 # Now write a function that prints two numbers on screen and takes an input. if
 # the input equals to the sum of the two number, it prints "correct" else it
