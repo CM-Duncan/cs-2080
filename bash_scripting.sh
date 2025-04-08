@@ -83,6 +83,12 @@ printit alice bob
 # fi 
 #
 # Remember to close the block with fi
+cond_test(){
+    if [[ $1 == $2 ]]; then
+        echo "hello"
+
+}
+
 
 #
 # Write a function called "cond_test" that takes two inputs
