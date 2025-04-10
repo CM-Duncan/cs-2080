@@ -2,16 +2,19 @@
 # 4/6/25
 # CS 2080
 # Dockerfile
+
+#extends ubuntu image
 FROM ubuntu:latest
 
 ENV DEBIAN_FRONTEND=noninteractive
-
+#install vim/nginx in instance
 RUN apt-get update && \
     apt-get install -y vim nginx && \
     apt-get clean
 
+#copy app script from docker into instance
 COPY app.sh /app.sh
-
+#script is executable 
 RUN chmod +x /app.sh
 
 CMD ["/app.sh"]
